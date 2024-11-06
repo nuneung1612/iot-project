@@ -1,7 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>
 
 <script>
-  client = new Paho.MQTT.Client("broker.hivemq.com", Number(8000), "clientId-65070131");
+  client = new Paho.MQTT.Client("wss://broker.hivemq.com:8000/mqtt", "clientId-65070131");
   client.onConnectionLost = onConnectionLost;
   client.onMessageArrived = onMessageArrived;
 
